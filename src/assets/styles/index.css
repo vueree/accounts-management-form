@@ -1,0 +1,40 @@
+@import "atomic.css";
+@import "variables.css";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+input {
+  width: 100%;
+  max-width: -webkit-fill-available;
+  padding: 0.5rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .account-form {
+    padding: 0.5rem;
+  }
+
+  .account-item {
+    padding: 0.75rem;
+  }
+
+  .multi-input input,
+  .custom-select select,
+  .multi-button {
+    font-size: 0.875rem;
+  }
+
+  .multi-button {
+    padding: 0.4rem 0.8rem;
+  }
+}
